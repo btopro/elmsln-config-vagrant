@@ -12,16 +12,16 @@ charset = "utf8"
 [superuser]
 login = "admin"
 password = "21232f297a57a5a743894a0e4a801fc3"
-email = "admin@online.elmsln"
+email = "admin@online.elmsln.local"
 salt = "10ebb3a20044eedbaf1cf13b56372f7a"
 
 [General]
-trusted_hosts[] = "analytics.elmsln"
-trusted_hosts[] = "courses.elmsln"
-trusted_hosts[] = "online.elmsln"
-trusted_hosts[] = "media.elmsln"
-trusted_hosts[] = "studio.elmsln"
-trusted_hosts[] = "interact.elmsln"
+trusted_hosts[] = "analytics.elmsln.local"
+trusted_hosts[] = "courses.elmsln.local"
+trusted_hosts[] = "online.elmsln.local"
+trusted_hosts[] = "media.elmsln.local"
+trusted_hosts[] = "studio.elmsln.local"
+trusted_hosts[] = "interact.elmsln.local"
 
 [PluginsInstalled]
 PluginsInstalled[] = "Login"
