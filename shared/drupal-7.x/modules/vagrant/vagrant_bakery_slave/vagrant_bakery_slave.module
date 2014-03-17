@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Vagrant bakery slave feature.
+ */
+
+include_once 'vagrant_bakery_slave.features.inc';

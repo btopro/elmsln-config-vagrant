@@ -5,3 +5,12 @@
  */
 
 include_once 'vagrant_bakery.features.inc';
+
+/**
+ * Implements hook_cis_service_instance_options_alter().
+ */
+function vagrant_bakery_cis_service_instance_options_alter(&$options, $course, $service) {
+  // modules we require for all builds
+  $options['en'][] = 'vagrant_bakery_slave';
+  $options['en'][] = 'vagrant_piwik';
+}
