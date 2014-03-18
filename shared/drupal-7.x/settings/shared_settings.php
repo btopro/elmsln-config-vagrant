@@ -2,7 +2,8 @@
 # APC cache backend
 #$conf['apc_show_debug'] = TRUE;
 # EVERYTHING COMMENTED OUT FOR VAGRANT HAPPINESS
-/*$conf['cache_backends'][] = 'sites/all/modules/ulmus/apc/drupal_apc_cache.inc';
+/*
+$conf['cache_backends'][] = 'sites/all/modules/ulmus/apc/drupal_apc_cache.inc';
 # APC as default container, others are targetted per bin
 #$conf['cache_default_class'] = 'DrupalAPCCache';
 # APC as default, so these can be commented out
@@ -41,4 +42,5 @@ $conf['cache_class_cache_entity_node'] = 'DrupalFileCache';
 $conf['cache_default_class']    = 'DrupalDatabaseCache';
 # THIS MUST BE SERVED FROM DB FOR STABILITY
 $conf['cache_class_cache_cis_connector'] = 'DrupalDatabaseCache';
-$conf['cache_class_cache_form'] = 'DrupalDatabaseCache';*/
+$conf['cache_class_cache_form'] = 'DrupalDatabaseCache';
+*/
