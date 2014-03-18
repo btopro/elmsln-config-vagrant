@@ -24,7 +24,6 @@ function vagrant_bakery_slave_user_default_permissions() {
     'name' => 'bypass bakery',
     'roles' => array(
       'SERVICE ACCOUNT' => 'SERVICE ACCOUNT',
-      'administrator' => 'administrator',
     ),
     'module' => 'bakery',
   );
