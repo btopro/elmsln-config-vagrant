@@ -13,6 +13,7 @@
     'media',
     'studio',
     'interact',
+    'blog',
   );
   // loop through known stacks
   foreach ($stacks as $stack) {
