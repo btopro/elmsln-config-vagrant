@@ -1,0 +1,20 @@
+<?php
+/**
+ * @file
+ * Modifications to the default build routine for vagrant development
+ */
+/**
+ * Implements hook_cis_service_instance_options_alter().
+ *
+ * These are recommended defaults when modifying the build routine for service
+ * instances created at run time. These serve as model defaults but if you
+ * want to change these you can disable this module and add your own in
+ * manually.
+ */
+function vagrant_cis_dev_cis_service_instance_options_alter(&$options, $course, $service) {
+  // disable performance optimizations
+  $options['vset'][] = 'preprocess_css 0';
+  $options['vset'][] = 'preprocess_js 0';
+  // devel so we can debug consistently
+  $options['en'][] = 'devel';
+}

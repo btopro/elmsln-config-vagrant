@@ -1,0 +1,6 @@
+; $Id: vagrant_cis_dev.info
+name = "Vagrant CIS Development"
+description = "Development build routine stuff"
+package = "Vagrant"
+dependencies[] = cis_helper
+core = "7.x"
