@@ -18,3 +18,11 @@ function vagrant_cis_dev_cis_service_instance_options_alter(&$options, $course, 
   // devel so we can debug consistently
   $options['en'][] = 'devel';
 }
+
+/**
+ * Implements hook_cis_service_instance_TOOL_options_alter().
+ */
+function vagrant_cis_dev_cis_service_instance_courses_options_alter(&$options, $course, $service) {
+  // mooc should have some accessibility tests to play with OOTB
+  $options['en'][] = 'textbook_wcag20aa';
+}
