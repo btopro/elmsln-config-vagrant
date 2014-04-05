@@ -17,6 +17,10 @@ function vagrant_cis_dev_cis_service_instance_options_alter(&$options, $course, 
   $options['vset'][] = 'preprocess_js 0';
   // devel so we can debug consistently
   $options['en'][] = 'devel';
+  // UI modules
+  $options['en'][] = 'context_ui';
+  $options['en'][] = 'field_ui';
+  $options['en'][] = 'views_ui';
   // environmental indicator so we now what we are working on
   $options['en'][] = 'environment_indicator';
 }
