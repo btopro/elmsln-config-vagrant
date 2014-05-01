@@ -62,9 +62,6 @@ function cis_example_cis_form_alter(&$form, &$form_state, $form_id) {
         $exp = explode('___', $lti['section']['string']);
         $exp = explode('__', $exp[1]);
         $lti['course']['name'] = $exp[0];
-        if ($exp[0] == 'RART') {
-          $exp[0] = 'ART';
-        }
         $exp[1] = str_replace('_', '', substr($exp[1], 0, count($exp[1]) - 4));
         $lti['course']['name'] = $exp[0] . ' ' . $exp[1];
         $lti['course']['machine_name'] = strtolower($exp[0] . $exp[1]);
