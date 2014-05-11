@@ -49,8 +49,8 @@ function cis_example_cis_form_alter(&$form, &$form_state, $form_id) {
   // alter settings specific to CIS on quick launch page
   if ($form_id == 'cis_helper_quick_setup_page') {
     // convert campus to select field with options
-    $form['details']['section']['campus']['#type'] = 'select';
-    $form['details']['section']['campus']['#options'] = _cis_example_utility_campus_list();
+    //$form['details']['section']['campus']['#type'] = 'select';
+    //$form['details']['section']['campus']['#options'] = _cis_example_utility_campus_list();
     // handle LTI request if one is detected
     if (isset($_GET['lti_launch'])) {
       $form['course']['#visible'] = FALSE;
