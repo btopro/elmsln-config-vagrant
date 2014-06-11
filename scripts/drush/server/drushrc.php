@@ -346,6 +346,5 @@ $options['shell-aliases']['offline'] = 'variable-set -y --always-set maintenance
 $options['shell-aliases']['online'] = 'variable-delete -y --exact maintenance_mode';
 
 # dl location that makes sense for shared development
-$command_specific['dl'] = array('destination' => 'sites/all/modules/ulmus');
 # ELMSLN Base for dslm
 $options['dslm_base'] = '/var/www/elmsln/core/dslmcode';
