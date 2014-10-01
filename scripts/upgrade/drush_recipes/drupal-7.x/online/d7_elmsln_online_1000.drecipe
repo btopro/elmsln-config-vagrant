@@ -1,0 +1,20 @@
+{
+  "name": "ELMSLN Update",
+  "drush_recipes_api": "1.0",
+  "weight": "0",
+  "core": "7",
+  "recipe": [
+    {
+      "command": "cc",
+      "arguments": [
+        "all"
+      ]
+    }
+  ],
+  "metadata": {
+    "type": "update",
+    "description": "UPDATE: Drupal 7 ELMSLN @online 1000",
+    "version": "1000",
+    "author": "elmsln"
+  }
+}
