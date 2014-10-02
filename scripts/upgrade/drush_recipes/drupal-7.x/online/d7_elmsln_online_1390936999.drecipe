@@ -5,16 +5,14 @@
   "core": "7",
   "recipe": [
     {
-      "command": "cc",
-      "arguments": [
-        "all"
-      ]
+      "command": "status"
     }
   ],
   "metadata": {
     "type": "update",
-    "description": "UPDATE: Drupal 7 ELMSLN @online 1000",
-    "version": "1000",
+    "description": "UPDATE: Drupal 7 ELMSLN @online 1390936999",
+    "version": "1390936999",
+    "timestamp": "1390936999",
     "author": "elmsln"
   }
 }
