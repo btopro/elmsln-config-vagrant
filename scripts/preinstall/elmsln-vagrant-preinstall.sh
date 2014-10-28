@@ -10,9 +10,9 @@ cat ~/legacy/scripts/preinstall/$1/values.sh | sudo bash /var/www/elmsln/scripts
 sudo rm -rf ~/.drush
 bash /var/www/elmsln/scripts/install/users/elmsln-admin-user.sh
 # list whats in .drush, .bashrc and the generated config file to verify they worked
-ls ~/.drush
-cat ~/.bashrc
-cat /var/www/elmsln/config/scripts/drush-create-site/config.cfg
+#ls ~/.drush
+#cat ~/.bashrc
+#cat /var/www/elmsln/config/scripts/drush-create-site/config.cfg
 
 # run the installer
 bash /var/www/elmsln/scripts/install/elmsln-install.sh
