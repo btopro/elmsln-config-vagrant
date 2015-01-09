@@ -1,9 +1,9 @@
 
 3
 vagrant
-/etc/php5/apache2/apc.ini
-/etc/php5/apache2/php.ini
-/etc/php5/apache2/mysql.ini
+/etc/php5/conf.d/apc.ini
+
+/etc/php5/conf.d/mysql.ini
 /etc/crontab
 /etc/apache2/sites-available/elmsln.conf
 /etc/apache2/sites-available/zzz_performance.conf
@@ -18,6 +18,6 @@ http
 admin@online.elmsln.local
 admin@online.elmsln.local
 root
-
+986107L4R3a2T5uicsOy
 vagrant
-yes
+no
