@@ -1,13 +1,5 @@
 
-3
-vagrant
-/etc/php5/conf.d/apc.ini
-
-/etc/php5/conf.d/mysql.ini
-/etc/crontab
-/etc/apache2/sites-available/elmsln.conf
-/etc/apache2/sites-available/zzz_performance.conf
-yes
+2
 vagrant
 vu
 online.elmsln.local
