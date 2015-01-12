@@ -12,9 +12,6 @@
  * manually.
  */
 function vagrant_cis_dev_cis_service_instance_options_alter(&$options, $course, $service) {
-  // disable performance optimizations
-  $options['vset'][] = 'preprocess_css 0';
-  $options['vset'][] = 'preprocess_js 0';
   // devel so we can debug consistently
   $options['en'][] = 'devel';
   // UI modules
@@ -31,4 +28,14 @@ function vagrant_cis_dev_cis_service_instance_options_alter(&$options, $course, 
 function vagrant_cis_dev_cis_service_instance_courses_options_alter(&$options, $course, $service) {
   // mooc should have some accessibility tests to play with OOTB
   $options['en'][] = 'textbook_wcag20aa';
+}
+
+/**
+ * Implements hook_cis_service_instance_job_file_alter().
+ */
+function vagrant_cis_dev_cis_service_instance_job_file_alter(&$content, $course, $service, $service_instance) {
+  // force these to run last as they might get inserted prior to the setting
+  // that enables in a typical build
+  $content .= 'drush vset preprocess_css 0' . "\n";
+  $content .= 'drush vset preprocess_js 0' . "\n";
 }
