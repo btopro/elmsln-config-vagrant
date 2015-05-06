@@ -3,6 +3,17 @@
 $conf['environment_indicator_overwrite'] = TRUE;
 $conf['environment_indicator_overwritten_name'] = 'Dev: Vagrant';
 $conf['environment_indicator_overwritten_color'] = '#42b96a';
+if (isset($base_url)) {
+	$parts = explode('/', $base_url);
+	$dots = explode('.', $base_url);
+	// give us the ending address
+	$last = array_pop($parts);
+	$base_url = str_replace('https://', 'http://', $dots[0]) . 'elmsln.local'
+	// make sure this isn't an authority
+	if (strpos($last, '.') === FALSE) {
+		$base_url .= '/' . $last;
+	}
+}
 # APC cache backend
 #$conf['apc_show_debug'] = TRUE;
 # EVERYTHING COMMENTED OUT FOR VAGRANT HAPPINESS
