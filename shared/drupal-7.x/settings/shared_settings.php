@@ -35,7 +35,7 @@ foreach ($lines as $line) {
       	$databases['default']['defalt']['username'] = str_replace('"', '', str_replace("'", '', $tmp[1]));
       }
       // set password to super
-      if ($tmp[0] == 'dbsupw'))) {
+      if ($tmp[0] == 'dbsupw') {
 				// strip encapsulation if it exists
 				$databases['default']['defalt']['password'] = str_replace('"', '', str_replace("'", '', $tmp[1]));
       }
