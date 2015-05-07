@@ -12,7 +12,7 @@ if (isset($base_url)) {
   // give us the ending address
   $last = array_pop($parts);
   // replace rest of the address
-  $base_url = str_replace('https://', 'http://', $dots[0]) . 'elmsln.local';
+  $base_url = str_replace('https://', 'http://', $dots[0]) . '.elmsln.local';
   // make sure this isn't an authority which won't return an address
   if (strpos($last, '.') === FALSE) {
     $base_url .= '/' . $last;
