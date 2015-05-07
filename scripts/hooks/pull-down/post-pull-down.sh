@@ -4,4 +4,4 @@
 # a significant environment change from prod to dev
 drush @elmsln dis securepages apc filecache apdqc --y
 # cook the go local script
-drush @elmsln cook golocal --mlt-email_address=$email --y
+drush @elmsln cook golocal --mlt-email_address=$1 --y
