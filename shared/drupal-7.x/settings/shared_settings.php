@@ -3,21 +3,6 @@
 $conf['environment_indicator_overwrite'] = TRUE;
 $conf['environment_indicator_overwritten_name'] = 'Dev: Vagrant';
 $conf['environment_indicator_overwritten_color'] = '#42b96a';
-// generate the base url if its currently set; always should be
-if (isset($base_url)) {
-  // split based on slash
-  $parts = explode('/', $base_url);
-  // split based on sub-domains
-  $dots = explode('.', $base_url);
-  // give us the ending address
-  $last = array_pop($parts);
-  // replace rest of the address
-  $base_url = str_replace('https://', 'http://', $dots[0]) . '.elmsln.local';
-  // make sure this isn't an authority which won't return an address
-  if (strpos($last, '.') === FALSE) {
-    $base_url .= '/' . $last;
-  }
-}
 
 // forcibly override the connection credentials to be happy w/ vagrant
 $cfg = file_get_contents('/var/www/elmsln/config/scripts/drush-create-site/config.cfg');
