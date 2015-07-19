@@ -1,4 +1,11 @@
 <?php
+
+function __the_end(){
+    if(($err=error_get_last()))
+        die('<pre>'.print_r($err,true).'</pre>');
+}
+register_shutdown_function('__the_end');
+
 # env indicator - useful when working on multiple environments
 $conf['environment_indicator_overwrite'] = TRUE;
 $conf['environment_indicator_overwritten_name'] = 'Dev: Vagrant';
