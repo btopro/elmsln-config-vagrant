@@ -59,11 +59,12 @@ function vagrant_bakery_strongarm() {
   $strongarm->value = array(
     0 => 'http://courses.elmsln.local/',
     1 => 'http://studio.elmsln.local/',
-    2 => 'http://media.elmsln.local/',
-    3 => 'http://interact.elmsln.local/',
-    4 => 'http://blog.elmsln.local/',
-    5 => 'http://discuss.elmsln.local/',
+    2 => 'http://blog.elmsln.local/',
+    3 => 'http://discuss.elmsln.local/',
+    4 => 'http://media.elmsln.local/',
+    5 => 'http://interact.elmsln.local/',
     6 => 'http://comply.elmsln.local/',
+    7 => 'http://inbox.elmsln.local/',
   );
   $export['bakery_slaves'] = $strongarm;
 
