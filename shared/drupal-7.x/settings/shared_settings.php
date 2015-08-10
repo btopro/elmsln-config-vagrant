@@ -1,10 +1,21 @@
 <?php
 
+// Provide an exit function to prevent WSOD scenarios.
+// This ensures you always see an error message if you get one
+// which is incredibly useful when pushing code into a Vagrant instance
+// for testing and development.
 function __the_end(){
     if(($err=error_get_last()))
         die('<pre>'.print_r($err,true).'</pre>');
 }
 register_shutdown_function('__the_end');
+
+// Allow RestWS calls to pass through on bakery installs, otherwise webservices
+// reroute looking for the bakery login cookie and fail.
+// If bakery isn't installed this does nothing and can be ignored.
+if (isset($conf['restws_basic_auth_user_regex'])) {
+  $conf['bakery_is_master'] = TRUE;
+}
 
 # env indicator - useful when working on multiple environments
 $conf['environment_indicator_overwrite'] = TRUE;
