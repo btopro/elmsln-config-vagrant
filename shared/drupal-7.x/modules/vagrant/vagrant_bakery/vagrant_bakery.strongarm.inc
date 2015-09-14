@@ -65,6 +65,9 @@ function vagrant_bakery_strongarm() {
     5 => 'http://interact.elmsln.local/',
     6 => 'http://comply.elmsln.local/',
     7 => 'http://inbox.elmsln.local/',
+    8 => 'http://people.elmsln.local/',
+    9 => 'http://grades.elmsln.local/',
+    10 => 'http://innovate.elmsln.local/',
   );
   $export['bakery_slaves'] = $strongarm;
 
