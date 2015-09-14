@@ -90,3 +90,8 @@ $databases['default']['default']['init_commands'] = array(
 // fast 404 to make advagg happy in the event fast 404 is default
 // we may do this in the future, right now just make sure the setting is correct
 //$conf['404_fast_paths_exclude'] = '/\/(?:styles)\// to /\/(?:styles|advagg_(cs|j)s)\//';
+
+// httprl setting to avoid really long timeouts
+$conf['httprl_install_lock_time'] = 1;
+// make authcache happy with the safer controller if we're using it
+$conf['authcache_p13n_frontcontroller_path'] = 'authcache.php';
