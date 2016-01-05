@@ -49,7 +49,7 @@ function vagrant_bakery_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'bakery_master';
-  $strongarm->value = 'http://online.elmsln.local/';
+  $strongarm->value = 'http://people.elmsln.local/';
   $export['bakery_master'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -65,9 +65,10 @@ function vagrant_bakery_strongarm() {
     5 => 'http://interact.elmsln.local/',
     6 => 'http://comply.elmsln.local/',
     7 => 'http://inbox.elmsln.local/',
-    8 => 'http://people.elmsln.local/',
+    8 => 'http://online.elmsln.local/',
     9 => 'http://grades.elmsln.local/',
     10 => 'http://innovate.elmsln.local/',
+    11 => 'http://lq.elmsln.local/',
   );
   $export['bakery_slaves'] = $strongarm;
 
