@@ -1,7 +1,0 @@
-<?php
-/**
- * @file
- * Code for the Vagrant piwik feature.
- */
-
-include_once 'vagrant_piwik.features.inc';
