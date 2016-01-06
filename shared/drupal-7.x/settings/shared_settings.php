@@ -50,17 +50,17 @@ $conf['httprl_install_lock_time'] = 1;
 $conf['authcache_p13n_frontcontroller_path'] = 'authcache.php';
 
 # env indicator - useful when working on multiple environments
-#$conf['environment_indicator_overwrite'] = TRUE;
-#$conf['environment_indicator_overwritten_name'] = 'Dev: Local';
-#$conf['environment_indicator_overwritten_color'] = '#42b96a';
+$conf['environment_indicator_overwrite'] = TRUE;
+$conf['environment_indicator_overwritten_name'] = 'Dev: Local';
+$conf['environment_indicator_overwritten_color'] = '#42b96a';
 # APC cache backend
 # Comment this back in for apc super fast support, not all systems support this
 
 #$conf['apc_show_debug'] = TRUE;
-$conf['cache_backends'][] = 'sites/all/modules/ulmus/apdqc/apdqc.cache.inc';
+#$conf['cache_backends'][] = 'sites/all/modules/ulmus/apdqc/apdqc.cache.inc';
 #$conf['cache_backends'][] = 'sites/all/modules/ulmus/apc/drupal_apc_cache.inc';
-$conf['cache_backends'][] = 'sites/all/modules/ulmus/authcache/authcache.cache.inc';
-$conf['cache_backends'][] = 'sites/all/modules/ulmus/authcache/modules/authcache_builtin/authcache_builtin.cache.inc';
+#$conf['cache_backends'][] = 'sites/all/modules/ulmus/authcache/authcache.cache.inc';
+#$conf['cache_backends'][] = 'sites/all/modules/ulmus/authcache/modules/authcache_builtin/authcache_builtin.cache.inc';
 
 #$conf['session_inc'] = 'sites/all/modules/ulmus/apdqc/apdqc.session.inc';
 #$conf['lock_inc'] = 'sites/all/modules/ulmus/apdqc/apdqc.lock.inc';
@@ -83,10 +83,10 @@ $conf['cache_class_cache_path'] = 'DrupalAPCCache';
 $conf['cache_class_cache_book'] = 'DrupalAPCCache';
 */
 # Default DB for the ones that change too frequently and are small
-$conf['cache_default_class']    = 'APDQCache';
+#$conf['cache_default_class']    = 'APDQCache';
 # THIS MUST BE SERVED FROM DB FOR STABILITY
-$conf['cache_class_cache_cis_connector'] = 'APDQCache';
-$conf['cache_class_cache_form'] = 'APDQCache';
+#$conf['cache_class_cache_cis_connector'] = 'APDQCache';
+#$conf['cache_class_cache_form'] = 'APDQCache';
 
 // this is assuming all databases using this file operate off of default
 // this should always be true of ELMSLN connected systems but just be aware
