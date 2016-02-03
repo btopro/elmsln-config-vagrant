@@ -1,7 +1,0 @@
-<?php
-/**
- * @file
- * Code for the Vagrant Bakery feature.
- */
-
-include_once 'vagrant_bakery.features.inc';
