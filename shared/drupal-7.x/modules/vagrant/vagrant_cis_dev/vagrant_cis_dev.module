@@ -30,4 +30,5 @@ function vagrant_cis_dev_cis_service_instance_job_file_alter(&$content, $course,
   // that enables in a typical build
   $content .= 'drush vset preprocess_css 0' . "\n";
   $content .= 'drush vset preprocess_js 0' . "\n";
+  $content .= 'drush vset admin_menu_dropdown_default 0' . "\n";
 }
