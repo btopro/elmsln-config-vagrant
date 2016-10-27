@@ -70,8 +70,6 @@ $conf['environment_indicator_overwritten_color'] = '#42b96a';
 // this should always be true of ELMSLN connected systems but just be aware
 // of this in case your doing any prefixing or crazy stuff like connecting to
 // multiple databases
-$databases['default']['default']['init_commands']['isolation'] = "SET SESSION tx_isolation='READ-COMMITTED'";
-$databases['default']['default']['init_commands']['wait_timeout'] = "SET SESSION wait_timeout = 600";
 
 // fast 404 to make advagg happy in the event fast 404 is default
 // we may do this in the future, right now just make sure the setting is correct
