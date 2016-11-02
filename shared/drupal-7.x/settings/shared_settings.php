@@ -54,23 +54,8 @@ $conf['environment_indicator_overwrite'] = TRUE;
 $conf['environment_indicator_overwritten_name'] = 'Dev: Local';
 $conf['environment_indicator_overwritten_color'] = '#42b96a';
 
-#$conf['cache_backends'][] = 'sites/all/modules/ulmus/apdqc/apdqc.cache.inc';
-#$conf['cache_backends'][] = 'sites/all/modules/ulmus/authcache/authcache.cache.inc';
-#$conf['cache_backends'][] = 'sites/all/modules/ulmus/authcache/modules/authcache_builtin/authcache_builtin.cache.inc';
-
-#$conf['session_inc'] = 'sites/all/modules/ulmus/apdqc/apdqc.session.inc';
-#$conf['lock_inc'] = 'sites/all/modules/ulmus/apdqc/apdqc.lock.inc';
-# Default DB for the ones that change too frequently and are small
-#$conf['cache_default_class']    = 'APDQCache';
-# THIS MUST BE SERVED FROM DB FOR STABILITY
-#$conf['cache_class_cache_cis_connector'] = 'APDQCache';
-#$conf['cache_class_cache_form'] = 'APDQCache';
-
-// this is assuming all databases using this file operate off of default
-// this should always be true of ELMSLN connected systems but just be aware
-// of this in case your doing any prefixing or crazy stuff like connecting to
-// multiple databases
-
 // fast 404 to make advagg happy in the event fast 404 is default
 // we may do this in the future, right now just make sure the setting is correct
 //$conf['404_fast_paths_exclude'] = '/\/(?:styles)\// to /\/(?:styles|advagg_(cs|j)s)\//';
+// enable this to support the legacy zurb foundation components
+//$conf['foundation_access_legacy'] = TRUE;
