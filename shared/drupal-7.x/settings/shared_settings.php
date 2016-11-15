@@ -37,18 +37,6 @@ foreach ($lines as $line) {
 $databases['default']['default']['host'] = 'localhost';
 $databases['default']['default']['port'] = '';
 
-// Allow RestWS calls to pass through on bakery installs, otherwise webservices
-// reroute looking for the bakery login cookie and fail.
-// If bakery isn't installed this does nothing and can be ignored.
-if (isset($conf['restws_basic_auth_user_regex'])) {
-  $conf['bakery_is_master'] = TRUE;
-}
-
-// httprl setting to avoid really long timeouts
-$conf['httprl_install_lock_time'] = 1;
-// make authcache happy with the safer controller if we're using it
-$conf['authcache_p13n_frontcontroller_path'] = 'authcache.php';
-
 # env indicator - useful when working on multiple environments
 $conf['environment_indicator_overwrite'] = TRUE;
 $conf['environment_indicator_overwritten_name'] = 'Dev: Local';
