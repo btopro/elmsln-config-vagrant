@@ -1,5 +1,10 @@
 <?php
 
+// fastest way to get tincan integration across the network
+// $conf['tincanapi_endpoint'] = '';
+// $conf['tincanapi_auth_user'] = '';
+// $conf['tincanapi_auth_password'] = '';
+
 // Provide an exit function to prevent WSOD scenarios.
 // This ensures you always see an error message if you get one
 // which is incredibly useful when pushing code into a Vagrant instance
