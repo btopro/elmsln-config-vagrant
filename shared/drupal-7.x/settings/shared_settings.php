@@ -19,7 +19,7 @@ register_shutdown_function('__the_end');
 $conf['environment_indicator_overwrite'] = TRUE;
 $conf['environment_indicator_overwritten_name'] = 'Vagrant';
 $conf['environment_indicator_overwritten_color'] = '#42b96a';
-
+$conf['theme_debug'] = TRUE;
 // enable this to support the legacy zurb foundation components
 //$conf['foundation_access_legacy'] = TRUE;
 
